@@ -1,0 +1,11 @@
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/flask-app   1/1     1            1           5m53s
+
+NAME                            READY   STATUS             RESTARTS   AGE
+pod/flask-app-7f5c9d68f-d9k99   1/1     Running            0          111s
+pod/hello-k8s                   0/1     ImagePullBackOff   0          50d
+
+NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)           AGE
+service/flask-app    NodePort    10.99.196.125    <none>        15000:32493/TCP   5m53s
+service/hello-k8s    NodePort    10.104.211.136   <none>        80:32254/TCP      50d
+service/kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP           50d
